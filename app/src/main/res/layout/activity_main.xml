@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pink"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="인생은 주사위 한방에\n가는거 아니겠습니까?"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:layout_marginBottom="100dp"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:weightSum="2"
+            >
+            <ImageView
+                android:id="@+id/diceImg1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:src="@drawable/dice_1"/>
+            <ImageView
+                android:id="@+id/diceImg2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:src="@drawable/dice_1"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/diceStartBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="50dp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:text="Go!"/>
+    </LinearLayout>
+</layout>
